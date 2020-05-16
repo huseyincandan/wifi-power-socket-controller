@@ -153,7 +153,7 @@ void accessPointHandler() {
   for (int i=0; i<webServer.headers();i++){
     Serial.println(webServer.headerName(i) + ":" + webServer.header(i));
   }
-  if (argOp == "HIGH") {
+  if (argOp == "HIGH") { 
       setSocketState(HIGH);  
   } else {
     if (argOp == "LOW") {
